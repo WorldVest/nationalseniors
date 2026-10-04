@@ -711,6 +711,15 @@ a:hover { color: #fff; }
   .split, .cols-2, .pre65-grid, .pre65-intro, .solution-cards.two, .contact-grid { grid-template-columns: 1fr; }
   .split.reverse > :first-child { order: 0; }
 }
+/* Top title: exactly two lines on computers
+   ("Do You Really Want to Be in the" / "Group Retiree Health Insurance Business?") */
+@media (min-width: 1001px) {
+  .hero-copy { max-width: none; }
+  .hero .hero-title { font-size: clamp(2.4rem, 4.1vw, 4.1rem); }
+  .hero .hero-title span { display: block; white-space: nowrap; }
+  .hero .lead { max-width: 760px; }
+}
+@media (min-width: 1001px) { .hero .lead { max-width: 980px; } }
 
 </style>
 </head>
@@ -738,7 +747,7 @@ a:hover { color: #fff; }
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow">Employers, Municipalities, and Unions:</span>
-      <h1>Do You Really Want to Be in the Group Retiree Health Insurance Business?</h1>
+      <h1 class="hero-title"><span>Do You Really Want to Be in the</span> <span>Group Retiree Health Insurance Business?</span></h1>
       <p class="lead">Transfer your Group Sponsorship Role to an NSC Sponsored Trust</p>
       <div class="hero-actions">
         <a class="btn btn-gold" href="#contact">Contact Us</a>
