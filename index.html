@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>National Seniors Coalition, Inc. | Group Retiree Medical Solutions in Chicago, IL</title>
 <meta name="description" content="At National Seniors Coalition, Inc. in Chicago, IL, we work with businesses with retiree medical insurance problems. Our post-65 retiree solutions are fully insured plans that offer access to any provider or hospital that accepts Medicare.">
-<link rel="icon" href="images/logo.png">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
@@ -720,6 +721,18 @@ a:hover { color: #fff; }
   .hero .lead { max-width: 760px; }
 }
 @media (min-width: 1001px) { .hero .lead { max-width: 980px; } }
+/* footer logo sits directly on the navy (no white box) */
+.footer-brand img { background: none; padding: 0; border-radius: 0; height: 60px; }
+.footer-brand .slogan {
+  margin: 14px 0 0; max-width: none;
+  font-family: var(--serif); font-style: italic; color: var(--gold-light);
+  font-size: 1.1rem; letter-spacing: .01em;
+}
+@media (min-width: 601px) { .footer-brand .slogan { font-size: 1.45rem; } }
+/* footer logo stretches to the same width as the slogan under it */
+.footer-brand { display: inline-flex; flex-direction: column; width: max-content; max-width: 100%; }
+.footer-brand a { display: block; }
+.footer-brand img { width: 100%; height: auto; }
 
 </style>
 </head>
@@ -1005,6 +1018,7 @@ a:hover { color: #fff; }
   <div class="wrap footer-main footer-two">
     <div class="footer-brand">
       <a href="#home"><img src="images/logo.png" alt="National Seniors Coalition, Inc."></a>
+      <p class="slogan">National in Scope with a Local Presence</p>
     </div>
     <div>
       <ul><li><a href="#home">Home</a></li><li><a href="#why-choose-us">Why Choose Us</a></li><li><a href="#about">About Us</a></li><li><a href="#individual-plans">Individual Plans</a></li><li><a href="#contact">Contact Us</a></li></ul>
