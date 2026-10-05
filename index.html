@@ -733,6 +733,19 @@ a:hover { color: #fff; }
 .footer-brand { display: inline-flex; flex-direction: column; width: max-content; max-width: 100%; }
 .footer-brand a { display: block; }
 .footer-brand img { width: 100%; height: auto; }
+/* footer logo back to its normal size */
+.footer-brand { display: block; width: auto; }
+.footer-brand img { width: auto; height: 60px; max-width: 100%; }
+
+/* bigger header logo (width follows the logo's own shape) */
+.brand img { height: 76px; width: auto; }
+.site-header .wrap { min-height: 100px; }
+section[id] { scroll-margin-top: 108px; }
+@media (max-width: 600px) {
+  .brand img { height: 56px; }
+  .site-header .wrap { min-height: 78px; }
+  section[id] { scroll-margin-top: 86px; }
+}
 
 </style>
 </head>
