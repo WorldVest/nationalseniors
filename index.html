@@ -759,6 +759,14 @@ section[id] { scroll-margin-top: 108px; }
 /* contact (white) logo: double size */
 .footer-brand img { height: 200px; width: auto; max-width: 100%; }
 @media (max-width: 600px) { .footer-brand img { height: auto; width: 100%; max-width: 340px; } }
+/* header logo 95px tall (width follows its shape) */
+.brand img { height: 95px; width: auto; }
+.site-header .wrap { min-height: 103px; }
+@media (max-width: 600px) { .brand img { height: 70px; } .site-header .wrap { min-height: 78px; } }
+
+/* white logo centered over the slogan */
+.footer-brand { display: inline-flex; flex-direction: column; align-items: center; text-align: center; width: max-content; max-width: 100%; }
+.footer-brand .slogan { text-align: center; }
 
 </style>
 </head>
