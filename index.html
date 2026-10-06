@@ -746,6 +746,16 @@ section[id] { scroll-margin-top: 108px; }
   .site-header .wrap { min-height: 78px; }
   section[id] { scroll-margin-top: 86px; }
 }
+/* header logo fills the white bar */
+.site-header .wrap { min-height: 100px; }
+.brand img { height: 92px; width: auto; }
+@media (max-width: 600px) {
+  .site-header .wrap { min-height: 78px; }
+  .brand img { height: 70px; }
+}
+/* footer (contact) logo: white version, larger */
+.footer-brand img { height: 100px; width: auto; max-width: 100%; }
+@media (max-width: 600px) { .footer-brand img { height: 80px; } }
 
 </style>
 </head>
@@ -1030,7 +1040,7 @@ section[id] { scroll-margin-top: 108px; }
 <footer class="site-footer contact-footer">
   <div class="wrap footer-main footer-two">
     <div class="footer-brand">
-      <a href="#home"><img src="images/logo.png" alt="National Seniors Coalition, Inc."></a>
+      <a href="#home"><img src="images/logo-white.png" alt="National Seniors Coalition, Inc."></a>
       <p class="slogan">National in Scope with a Local Presence</p>
     </div>
     <div>
