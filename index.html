@@ -769,6 +769,11 @@ section[id] { scroll-margin-top: 108px; }
 .footer-brand .slogan { text-align: center; }
 /* footer: just the logo + slogan (page links removed) */
 .footer-main.footer-two { grid-template-columns: 1fr; }
+/* header logo 98px, nearly touching the top and bottom of the white bar */
+@media (min-width: 601px) {
+  .brand img { height: 98px; width: auto; }
+  .site-header .wrap { min-height: 102px; }
+}
 
 </style>
 </head>
